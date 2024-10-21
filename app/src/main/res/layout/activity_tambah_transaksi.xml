@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TambahTransaksiActivity">
+
+    <EditText
+        android:id="@+id/et_tanggal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal"
+        android:inputType="date"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="16dp" />
+
+    <EditText
+        android:id="@+id/et_jumlah"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Jumlah Transaksi"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/et_tanggal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <EditText
+        android:id="@+id/et_keterangan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Keterangan"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/et_jumlah"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <Spinner
+        android:id="@+id/spinner_kategori"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/et_keterangan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <Button
+        android:id="@+id/btn_simpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simpan Transaksi"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_kategori"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
